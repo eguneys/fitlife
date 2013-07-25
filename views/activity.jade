@@ -1,0 +1,68 @@
+extends layout
+block content
+  .jumbotron
+    .container.pull-left
+      h4 Activity
+    .hero-unit
+      .row
+        #wrapper
+          .chart
+            table#data-table(border="1", cellpadding="10", cellspacing="0", summary="The activity")
+              caption Activity in minutes
+              thead
+                tr
+                  td  &nbsp;
+                  th(scope="col") Monday
+                  th(scope="col") Tuesday
+                  th(scope="col") Wednesday
+                  th(scope="col") Thursday
+                  th(scope="col") Friday
+                  th(scope="col") Saturday
+                  th(scope="col") Sunday
+              tbody
+                tr
+                  th(scope="row") Chest/Triceps
+                  td 50
+                  td 30
+                  td 0
+                  td 0
+                  td 30
+                  td 20
+                  td 40
+                tr
+                  th(scope="row") Back/Biceps
+                  td 10
+                  td 50
+                  td 0
+                  td 0
+                  td 30
+                  td 0
+                  td 30
+                tr
+                  th(scope="row") Low Cardio/Stretching
+                  td 10
+                  td 10
+                  td 40
+                  td 10
+                  td 10
+                  td 10
+                  td 30
+                tr
+                  th(scope="row") Legs
+                  td 0
+                  td 0
+                  td 0
+                  td 50
+                  td 0
+                  td 0
+                  td 0
+                tr
+                  th(scope="row") Shoulder/Back
+                  td 30
+                  td 30
+                  td 10
+                  td 0
+                  td 50
+                  td 0
+                  td 30
+                tr

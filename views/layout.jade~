@@ -1,0 +1,39 @@
+doctype 5
+html
+  head
+    title FitLife
+    meta(charset="utf-8")
+    link(href='bootstrap/css/bootstrap.css', rel='stylesheet')
+    link(href='index.css', rel='stylesheet')
+    link(href='smashbargraph.css', rel='stylesheet')
+  body
+    .container
+      .masthead
+        h3.muted FitLife
+        .navbar
+          .navbar-inner
+            .container
+              ul.nav
+                li.active
+                  a(href='/') Home
+                li
+                  a(href='Progress') Progress
+                li
+                  a(href='Nutrition') Nutrition
+                li
+                  a(href='Activity') Activity
+                li
+                  a(href='#') Share
+                li             
+                  a(href='#') Profile
+
+      
+        block content
+        hr
+        .footer
+        p C Fitlife 2013
+    // Javascript at the bottom for fast page loading
+    // Grap jQuery from Google
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js")
+    // Example javascript
+    script(src="js/smashbargraph.js")
