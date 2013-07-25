@@ -3,6 +3,7 @@
     ,"description": "Online fitness website"
     ,"version": "0.0.1"
     ,"dependencies": {
-	"express": "*"
+	"express": "3.x"
+	,"jade": "*"
     }
 }
