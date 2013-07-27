@@ -6,11 +6,19 @@ $(function () {
                 renderTo: 'chart'
             },
             title: {
-                text: 'Statistics '
+                text: 'Monthly Activity'
             },
+	    subtitle: {
+
+	    },
             xAxis: {
-                categories: ['January', 'February', 'Maret', 'April', 'Mei','Juni','Juli','Agustus','September','Oktober','Nopember','December']
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun','Jul','Aug','Sept','Oct','Nov','Dec']
             },
+	    yAxis: {
+		title: {
+		    text: 'Total Minutes'
+		}
+	    },
             tooltip: {
                 formatter: function() {
                     var s;
@@ -24,9 +32,10 @@ $(function () {
                     return s;
                 }
             },
+
             labels: {
                 items: [{
-                    html: 'Total Guest',
+                    html: '',
                     style: {
                         left: '40px',
                         top: '8px',
@@ -36,21 +45,32 @@ $(function () {
             },
             series: [{
                 type: 'column',
-                name: 'Guest',
-                data: [322, 212, 122, 333, 224,100,40,340,50,100,300,230]
+                name: 'Chest/Triceps',
+                data: [280, 3.3, 122, 333, 224,100,40,340,50,100,300,230]
             }, {
                 type: 'column',
-                name: 'Member',
-                data: [222, 113, 335, 227, 336,453,234,543,123,222,432,122]
+                name: 'Back/Biceps',
+                data: [200, 113, 335, 227, 336,453,234,543,123,222,432,122]
             }, {
                 type: 'column',
-                name: 'Admin',
-                data: [234, 323, 311, 192, 110,321,131,232,121,123,123,443]
+                name: 'Cardio/Stretching',
+                data: [300, 323, 311, 192, 110,321,131,232,121,123,123,443]
             }, {
-                type: 'spline',
-                name: 'Average',
-                data: [312, 267, 323, 233, 333,123,213,123,134,324,243,123]
-            }, {
+                type: 'column',
+                name: 'Shoulders',
+                data: [240, 267, 323, 233, 333,123,213,123,134,324,243,123]
+            },
+	       {
+		type: 'column',
+		name: 'Abs/Calves',
+		data:  [100, 267, 323, 233, 333,123,213,123,134,324,243,123]
+	    },
+	       {
+		   type: 'spline',
+		   name: 'Total',
+		   data: [800, 700, 1300, 1000, 1200, 700, 1200, 400, 500, 600, 1000, 1000]
+	       },
+		     /* {
                 type: 'pie',
                 name: 'Total consumption',
                 data: [{
@@ -72,7 +92,7 @@ $(function () {
                 dataLabels: {
                     enabled: false
                 }
-            }]
+            }*/]
         });
     });
 
