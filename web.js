@@ -25,6 +25,7 @@ app.get('/Activity', function(req, res) {
     res.render('activity2');
 });
 
-app.listen(8080, function () {
-    console.log(" - listening on 8080 ");
+var port = process.env.PORT || 8080
+app.listen(port, function () {
+    console.log(" - listening on " + port);
 });
