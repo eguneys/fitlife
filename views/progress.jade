@@ -1,77 +1,61 @@
 extends layout
 block content
   .jumbotron
-    .container-fluid
-      .row-fluid
-        .accordion
-          .accordion-group
-            .accordion-heading
-              a.accordion-toggle.btn(style='text-align: left;')
-                span Photo Line
-            .accordion-body
-              .accordion-inner
-                .hero-unit
-                 ul.thumbnails
-                   li.span4
-                     img.img-polaroid(src="http://placehold.it/480x300")
-                     span.badge.info.badge-inverse Week 5
-                     p Photo Line showing body progress
-                   li.span4
-                     img.img-polaroid(src="http://placehold.it/480x300")
-                     span.badge.info.badge-inverse Week 4
-                     p Another Photo
-      .row-fluid
-        .accordion
-          .accordion-group
-            .accordion-heading
-              a.accordion-toggle.btn(style='text-align: left;')
-               span Nutrition
-            .accordion-body
-              .accordion-inner
-                .row-fluid
-                  .span4
-                  .span8
-                    .hero-unit
-                       .row
-                         dl.dl-horizontal
-                           dt Calories
-                           dd
-                             .progress
-                               .bar.bar-success(style="width: 80%;")
-                               .bar.bar-warning(style="width: 20%;")
-                           dt Protein
-                           dd
-                             .progress
-                               .bar.bar-success(style="width: 80%;")
-                               .bar.bar-warning(style="width: 5%;")
-                           dt Fat
-                           dd
-                             .progress
-                               .bar(style="width: 70%;")
-                           dt Carbs
-                           dd
-                             .progress
-                               .bar.bar-success(style="width: 80%;")
-                               .bar.bar-warning(style="width: 10%;")
-      .row-fluid
-        .accordion
-          .accordion-group
-            .accordion-heading
-              a.accordion-toggle.btn(style='text-align: left;')
-               span Activity
-            .accordion-body
-              .accordion-inner
-                .row-fluid
-                  .span4
-                  .span8
-      .row-fluid
-        .accordion
-          .accordion-group
-            .accordion-heading
-              a.accordion-toggle.btn(style='text-align: left;')
-               span Social
-            .accordion-body
-              .accordion-inner
-                .row-fluid
-                  .span4
-                  .span8
+      .row
+        .panel
+          .panel-heading
+            button.btn.btn-info(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;')
+              h3 Photo Line
+          .row
+            .col-lg-3
+              a.thumbnail
+                img.img-polaroid(src="http://placehold.it/480x300")
+              span.badge.info.badge-inverse Week 5
+              p Photo Line showing body progress
+            .col-lg-3
+              a.thumbnail
+                img.img-polaroid(src="http://placehold.it/480x300")
+              span.badge.info.badge-inverse Week 4
+              p Another Photo
+      .row
+        .panel
+          .panel-heading
+            button.btn.btn-info(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;')
+              h3 Nutrition
+          .hero-unit
+            .row
+              .col-lg-4
+              .col-lg-8
+               dl.dl-horizontal
+                dt Calories
+                 dd
+                   .progress
+                     .progress-bar.progress-bar-success(style="width: 80%;")
+                     .progress-bar.progress-bar-warning(style="width: 20%;")
+                 dt Protein
+                 dd
+                   .progress
+                     .progress-bar.progress-bar-success(style="width: 80%;")
+                     .progress-bar.progress-bar-warning(style="width: 5%;")
+                 dt Fat
+                 dd
+                   .progress
+                     .progress-bar(style="width: 70%;")
+                 dt Carbs
+                 dd
+                   .progress
+                     .progress-bar.progress-bar-success(style="width: 80%;")
+                     .progress-bar.progress-bar-warning(style="width: 10%;")
+      .row
+        .panel
+          .panel-heading
+            button.btn.btn-info(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;')
+              h3 Activity
+          .hero-unit
+
+      .row
+        .panel
+          .panel-heading
+            button.btn.btn-info(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;')
+              h3 Social
+          .hero-unit

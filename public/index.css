@@ -37,3 +37,13 @@ body {
 
 
 /* Customize the navbar links to be fill the entire space of the .navbar */
+.bs-docs-nav {
+    background: #563d7c;
+}
+
+
+/* Customize custom controls */
+
+.panel-heading {
+    padding: 0px;
+}
