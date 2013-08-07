@@ -25,6 +25,10 @@ app.get('/Activity', function(req, res) {
     res.render('activity2');
 });
 
+app.get('/Share', function(req, res) {
+    res.render('share');
+});
+
 var port = process.env.PORT || 8080
 app.listen(port, function () {
     console.log(" - listening on " + port);

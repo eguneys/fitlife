@@ -7,32 +7,34 @@ block headcontent
 block content
   .jumbotron
     .row
+      .col-lg-8
           .panel.panel-primary
             .panel-heading.bs-panel-heading
-              button.btn.btn-primary(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;')
+              button.btn.btn-large.btn-primary(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;')
                 i.icon-calendar
                 |  Workout Calendar
             .bs-collapse-calendar.in
               #calendar
-    .row
-      .panel.panel-primary
-        .panel-heading.bs-panel-heading
-          button.btn.btn-primary(type='button', data-toggle='collapse', data-target='.bs-collapse-program', style='width: 100%;')
-            i.icon-th-list
-            |  Workout Programs
-        .bs-collapse-program.in
+      .col-lg-4
+        .panel.panel-primary
+          .panel-heading.btn-large.bs-panel-heading
+            button.btn.btn-primary(type='button', data-toggle='collapse', data-target='.bs-collapse-program', style='width: 100%;')
+              i.icon-th-list
+              |  Workout Programs
+          .bs-collapse-program.in
           
     .row
-      .panel.panel-primary
-        .panel-heading.bs-panel-heading
-          button.btn.btn-primary(type='button', data-toggle='collapse', data-target='.bs-collapse-activity', style='width: 100%;')
-            i.icon-bar-chart
-            |  Activity
-        .bs-collapse-activity.in
-          .row
-              #column
-          .row
-              #chart
+      .col-lg-12
+        .panel.panel-primary
+          .panel-heading.bs-panel-heading
+            button.btn.btn-large.btn-primary(type='button', data-toggle='collapse', data-target='.bs-collapse-activity', style='width: 100%;')
+              i.icon-bar-chart
+              |  Activity
+          .bs-collapse-activity.in
+            
+                #column
+            
+                #chart
                 .highcharts-container#highcharts-0
 
   script(src="complete-admin/resource/chart/chart-column.js", type="text/javascript")

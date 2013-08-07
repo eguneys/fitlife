@@ -3,8 +3,26 @@ block content
   .jumbotron
       .row
         .panel
-          .panel-heading.bs-panel-heading
-            button.btn.btn-default(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;') Photo Line
+          .panel-heading.bs-panel-heading.navbar-inverse
+              a.btn.btn-large.disabled Photo Line
+              .btn-group.pull-right
+                button.btn.btn-large.btn-default.dropdown-toggle(type='button', data-toggle='dropdown') Chest 
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a Front
+                  li
+                    a Side
+                  li
+                    a Bicep
+                  li
+                    a Back
+                  li
+                    a Legs
+                  li
+                    a Shirt
+               .clearfix
+            
           .row
             .col-lg-3
               a.thumbnail
@@ -18,40 +36,83 @@ block content
               p Another Photo
       .row
         .panel
-          .panel-heading.bs-panel-heading
-            button.btn.btn-default(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;') Nutrition
+          .panel-heading.bs-panel-heading.navbar-inverse
+              a.btn.btn-large.disabled Nutrition
           .hero-unit
-            .row
-              .col-lg-4
-              .col-lg-8
-               dl.dl-horizontal
-                dt Calories
-                 dd
-                   .progress
-                     .progress-bar.progress-bar-success(style="width: 80%;")
-                     .progress-bar.progress-bar-warning(style="width: 20%;")
-                 dt Protein
-                 dd
-                   .progress
-                     .progress-bar.progress-bar-success(style="width: 80%;")
-                     .progress-bar.progress-bar-warning(style="width: 5%;")
-                 dt Fat
-                 dd
-                   .progress
-                     .progress-bar(style="width: 70%;")
-                 dt Carbs
-                 dd
-                   .progress
-                     .progress-bar.progress-bar-success(style="width: 80%;")
-                     .progress-bar.progress-bar-warning(style="width: 10%;")
-      .row
-        .panel
-          .panel-heading.bs-panel-heading
-            button.btn.btn-default(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;') Activity
-          .hero-unit
+               .panel
+                 .input-group.pull-right(style='width: 10em;')
+                   input.form-control(type='text', placeholder='Date')
+                   .input-group-btn
+                     .btn-group.pull-right
+                      button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown') Daily 
+                         span.caret
+                       ul.dropdown-menu
+                         li
+                           a.btn.btn-small Daily
+                         li
+                           a.btn.btn-small Weekly
+                         li
+                           a.btn.btn-small Monthly
+                    .clearfix
+                  .clearfix
+                 .row
+                   .nutrition-left.col-lg-6
+                     h3 Food Groups
+                      dl.dl-horizontal
+                        dt Grains
+                        dd
+                          .progress
+                            .progress-bar.progress-bar-success(style="width: 80%;")
+                            .progress-bar.progress-bar-warning(style="width: 20%;")
+                        dt Vegetables
+                        dd
+                          .progress
+                            .progress-bar.progress-bar-success(style="width: 80%;")
+                            .progress-bar.progress-bar-warning(style="width: 5%;")
+                        dt Fruit
+                        dd
+                          .progress
+                            .progress-bar(style="width: 70%;")
+                        dt Protein
+                        dd
+                          .progress
+                            .progress-bar.progress-bar-success(style="width: 80%;")
+                          .progress-bar.progress-bar-warning(style="width: 10%;")
+
+                    .nutrition-right.col-lg-6
+                        h3 Nutrition
+                        dl.dl-horizontal
+                           dt Calories
+                           dd
+                             .progress
+                               .progress-bar.progress-bar-success(style="width: 80%;")
+                               .progress-bar.progress-bar-warning(style="width: 20%;")
+                           dt Protein
+                           dd
+                             .progress
+                               .progress-bar.progress-bar-success(style="width: 80%;")
+                               .progress-bar.progress-bar-warning(style="width: 5%;")
+                           dt Fat
+                           dd
+                             .progress
+                               .progress-bar(style="width: 70%;")
+                           dt Carbs
+                           dd
+                             .progress
+                               .progress-bar.progress-bar-success(style="width: 80%;")
+                           .progress-bar.progress-bar-warning(style="width: 10%;")
+               .panel
+                  #weightChart                 
 
       .row
         .panel
-          .panel-heading.bs-panel-heading
-            button.btn.btn-default(type='button', data-toggle='collapse', data-target='.bs-collapse-calendar', style='width: 100%;') Social
+          .panel-heading.bs-panel-heading.navbar-inverse
+              a.btn.btn-large.disabled Activity
+          .hero-unit
+            
+
+      .row
+        .panel
+          .panel-heading.bs-panel-heading.navbar-inverse
+              a.btn.disabled Social
           .hero-unit
